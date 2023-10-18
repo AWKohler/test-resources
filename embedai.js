@@ -2,13 +2,13 @@
 //const initial_message = {"initial_message":"hey how are you?"}
 
 if (document.createStyleSheet) {
-    document.createStyleSheet("https://embedai.thesamur.ai/embedai.css?v=2");
+    document.createStyleSheet("https://raw.githubusercontent.com/AWKohler/test-resources/main/embedai.css?v=2");
 } else {
     var head = document.getElementsByTagName("head")[0];
     var link = document.createElement("link");
     link.rel = "stylesheet";
     link.type = "text/css";
-    link.href = "https://embedai.thesamur.ai/embedai.css";
+    link.href = "https://raw.githubusercontent.com/AWKohler/test-resources/main/embedai.css";
     link.media = "all";
     head.appendChild(link);
 }
