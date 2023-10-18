@@ -1,0 +1,79 @@
+.embedai-logo{
+    cursor:pointer;
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    bottom: 32px;
+    right: 32px;
+    padding: 4px;
+    z-index: 999999;
+    opacity: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 2px rgba(22, 58, 71, 0.7);
+    transform: scale(1);
+    animation: pulse-black 2.5s infinite;
+    animation-timing-function: ease-in-out;
+}
+.embedai-logo:hover{
+    scale: 1.1;
+}
+.embedai-iframe{
+    display:none;
+    position: fixed;
+    width: 396px;
+    height: 75vh;
+    bottom: 94px;
+    right: 32px;
+    pointer-events: none;
+    z-index:99999 ;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: .6s ease opacity,.6s ease transform;
+    border-radius: 22px;
+    box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.1), 0px 10px 100px -20px rgba(50, 50, 93, 0.25), 0px 20px 60px -30px rgba(0, 0, 0, 0.3);
+}
+@keyframes pulse-black {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 8px 4px rgba(22, 58, 71, 0.7);
+    }
+
+    70% {
+        transform: scale(0.95);
+        box-shadow: 0 0 8px 8px rgba(22, 58, 71, 0.2);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 8px 4px rgba(22, 58, 71, 0.7);
+    }
+
+
+}
+@media screen and (max-width:1000px){
+    .embedai-logo{
+        width: 3rem;
+        height: 3rem;
+        bottom: 12px;
+        right: 12px;
+    }
+    .embedai-iframe{
+        width: 90%;
+        height: 90%;
+        bottom: 50px;
+        right: 16px;
+    }
+}
+
+.embedai-welcome-message{
+    cursor:pointer;
+    position: fixed;
+    bottom: 110px;
+    right: 32px;
+    padding: 4px;
+    z-index: 999999;
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 2px rgba(216, 216, 216, 0.7);
+    background: white;
+}
