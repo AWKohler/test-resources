@@ -83,7 +83,8 @@ function setWelcomeMessage(data){
 }
 
 var id = ""
-var getElement = document.querySelector('script[src^="https://embedai.thesamur.ai/embedai.js"]')
+var getElement = document.querySelector('script[src^="https://test-resources.vercel.app/embedai.js"]')
+// var getElement = document.querySelector('script[src^="https://embedai.thesamur.ai/embedai.js"]')
 // var getElement = document.querySelector('script[src^="http://localhost:5000/embedai.js"]')
 
 if(getElement.src.includes('?shop=')){
