@@ -16,8 +16,9 @@ if (document.createStyleSheet) {
 async function init(embedai_id) {
 const htmlContent = `
 <div class="embedai-welcome-message" id="welcome-message"></div>
-<!--<img class="embedai-logo" onclick="openIframe()" id="embedai-icon" />-->
+
 <div class="embedai-logo" onclick="openIframe()">
+    <img class="embedai-logo" onclick="openIframe()" id="embedai-icon" />
 </div>
 <iframe class="embedai-iframe" frameBorder="0" id="embedai-iframe" style="display:none"/>
 `
