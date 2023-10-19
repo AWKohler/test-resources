@@ -21,7 +21,7 @@
     /*animation: pulse-red 2.5s infinite;*/
     animation-timing-function: ease-in-out;
     /*background-color: white;*/
-    background-color: red;
+    background-color: blue;
 }
 .embedai-logo:hover{
     scale: 1.2;
