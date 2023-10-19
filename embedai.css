@@ -78,7 +78,8 @@
 .embedai-welcome-message{
     cursor:pointer;
     position: fixed;
-    bottom: 110px;
+    /*bottom: 110px;*/
+    bottom: 130px;
     right: 32px;
     padding: 4px;
     z-index: 999999;
