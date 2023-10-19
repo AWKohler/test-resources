@@ -15,17 +15,28 @@ if (document.createStyleSheet) {
 
 async function init(embedai_id) {
 const htmlContent = `
-<div class="embedai-welcome-message" id="welcome-message">
-    <div id="welcome-message"></div>
-</div>
-
-<div class="embedai-logo" onclick="openIframe()">
-    <img class="embedai-icn" onclick="openIframe()" id="embedai-icon" />
-</div>
+<div class="embedai-welcome-message" id="welcome-message"></div>
+<img class="embedai-logo" onclick="openIframe()" id="embedai-icon" />
 <iframe class="embedai-iframe" frameBorder="0" id="embedai-iframe" style="display:none"/>
 `
 
 ;
+
+/*
+
+<div class="embedai-welcome-message" id="welcome-message"/>
+
+<!--<div class="embedai-welcome-message" id="welcome-message">-->
+<!--    <div id="welcome-message"></div>-->
+<!--</div>-->
+
+<div class="embedai-logo">
+    <img class="embedai-icn" onclick="openIframe() id="embedai-icon" />
+<!--    <img class="embedai-icn" onclick="openIframe()" id="embedai-icon" />-->
+</div>
+<iframe class="embedai-iframe" frameBorder="0" id="embedai-iframe" style="display:none"/>
+ */
+
   const template = document.createElement("div");
   template.innerHTML = htmlContent;
   document.body.appendChild(template);

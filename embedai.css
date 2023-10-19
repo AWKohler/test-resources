@@ -6,17 +6,18 @@
     bottom: 34px;
     right: 34px;
     padding: 12px;
-    z-index: 999998;
+    z-index: 999999;
     opacity: 1;
     /*border-radius: 50%;*/
     border-radius: 30%;
-    box-shadow: 0 0 8px 2px rgba(22, 58, 71, 0.7);
+    /*box-shadow: 0 0 8px 2px rgba(22, 58, 71, 0.7);*/
+    box-shadow: 0 0 8px 2px rgba(22, 58, 71, 0.3);
     transform: scale(1);
     animation: pulse-black 2.5s infinite;
-    /*animation: pulse-red 2.5s infinite;*/
     animation-timing-function: ease-in-out;
-    /*background-color: white;*/
-    background-color: blue;
+    background-color: white;
+    /*background-color: blue;*/
+    /*background: white;*/
 }
 
 .embedai-icn{
