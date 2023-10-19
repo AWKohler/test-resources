@@ -15,9 +15,9 @@
     transform: scale(1);
     animation: pulse-black 2.5s infinite;
     animation-timing-function: ease-in-out;
-    /*background-color: white;*/
+    background-color: white;
     /*background-color: blue;*/
-    background: white;
+    /*background: white;*/
 }
 
 .embedai-icn{
