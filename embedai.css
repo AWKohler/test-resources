@@ -85,7 +85,7 @@
     padding: 8px;
     z-index: 999999;
     opacity: 1;
-    border-radius: 10px 10px 10px 0;
+    border-radius: 15px 15px 15px 0;
     box-shadow: 0 0 8px 2px rgba(216, 216, 216, 0.7);
     background: white;
     color: black; /* Set the text color to black */
