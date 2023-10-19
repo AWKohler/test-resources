@@ -20,7 +20,7 @@
 }
 
 .embedai-icn{
-
+    flex: fit-content;
 }
 .embedai-logo:hover{
     scale: 1.1;
