@@ -1,20 +1,26 @@
 .embedai-logo{
     cursor:pointer;
     position: fixed;
-    width: 3rem;
-    height: 3rem;
-    bottom: 32px;
-    right: 32px;
+    /*width: 3rem;*/
+    /*height: 3rem;*/
+    width: 5rem;
+    height: 5rem;
+    /*bottom: 32px;*/
+    bottom: 44px;
+    right: 44px;
+    /*right: 32px;*/
     padding: 4px;
     z-index: 999998;
     opacity: 1;
-    /*border-radius: 50%;*/
-    border-radius: 30%;
+    border-radius: 50%;
+    /*border-radius: 30%;*/
     box-shadow: 0 0 8px 2px rgba(22, 58, 71, 0.7);
     transform: scale(1);
-    animation: pulse-black 2.5s infinite;
+    /*animation: pulse-black 2.5s infinite;*/
+    animation: pulse-red 2.5s infinite;
     animation-timing-function: ease-in-out;
-    background-color: white;
+    /*background-color: white;*/
+    background-color: red;
 }
 .embedai-logo:hover{
     scale: 1.2;
