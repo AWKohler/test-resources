@@ -75,10 +75,9 @@
     }
 }
 
-.embedai-welcome-message{
-    cursor:pointer;
+.embedai-welcome-message {
+    cursor: pointer;
     position: fixed;
-    /*bottom: 110px;*/
     bottom: 130px;
     right: 32px;
     padding: 4px;
@@ -87,4 +86,5 @@
     border-radius: 10px;
     box-shadow: 0 0 8px 2px rgba(216, 216, 216, 0.7);
     background: white;
+    color: black; /* Set the text color to black */
 }
