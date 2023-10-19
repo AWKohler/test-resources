@@ -1,5 +1,5 @@
 
-const initial_message = {"initial_message":"hey how are you?"}
+// const initial_message = {"initial_message":"hey how are you?"}
 
 if (document.createStyleSheet) {
   document.createStyleSheet("https://test-resources.vercel.app/embedai.css?v=2");
