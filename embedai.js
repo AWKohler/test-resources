@@ -15,9 +15,11 @@ if (document.createStyleSheet) {
 
 async function init(embedai_id) {
 const htmlContent = `
-<div class="embedai-welcome-message" id="welcome-message">
-    <div id="welcome-message"></div>
-</div>
+<div class="embedai-welcome-message" id="welcome-message"/>
+
+<!--<div class="embedai-welcome-message" id="welcome-message">-->
+<!--    <div id="welcome-message"></div>-->
+<!--</div>-->
 
 <div class="embedai-logo" onclick="openIframe()">
     <img class="embedai-icn" onclick="openIframe()" id="embedai-icon" />
