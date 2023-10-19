@@ -16,7 +16,7 @@
     animation-timing-function: ease-in-out;
 }
 .embedai-logo:hover{
-    scale: 1.8;
+    scale: 1.2;
 }
 .embedai-iframe{
     display:none;
