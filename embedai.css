@@ -6,8 +6,8 @@
     width: 5rem;
     height: 5rem;
     /*bottom: 32px;*/
-    bottom: 44px;
-    right: 44px;
+    bottom: 52px;
+    right: 52px;
     /*right: 32px;*/
     padding: 4px;
     z-index: 999998;
@@ -16,8 +16,8 @@
     /*border-radius: 30%;*/
     box-shadow: 0 0 8px 2px rgba(22, 58, 71, 0.7);
     transform: scale(1);
-    /*animation: pulse-black 2.5s infinite;*/
-    animation: pulse-red 2.5s infinite;
+    animation: pulse-black 2.5s infinite;
+    /*animation: pulse-red 2.5s infinite;*/
     animation-timing-function: ease-in-out;
     /*background-color: white;*/
     background-color: red;
