@@ -47,10 +47,10 @@ const htmlContent = `
    * Append the source to the Iframe.
    * embedai_id : slug of the bot
    */
-  let iframeSource =
-    "https://embedai.thesamur.ai/embedai/embed/" + embedai_id;
   // let iframeSource =
-  //   "https://chat.openai.com/";
+  //   "https://embedai.thesamur.ai/embedai/embed/" + embedai_id;
+  let iframeSource =
+    "https://chathn.vercel.app/";
   let widgetIframe = document.getElementById("embedai-iframe");
   widgetIframe.src = iframeSource;
 
