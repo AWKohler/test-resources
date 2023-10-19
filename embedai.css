@@ -3,14 +3,14 @@
     position: fixed;
     /*width: 3rem;*/
     /*height: 3rem;*/
-    width: 7rem;
-    height: 7rem;
+    width: 13rem;
+    height: 13rem;
     /*bottom: 32px;*/
     bottom: 44px;
     right: 44px;
     /*right: 32px;*/
     /*padding: 4px;*/
-    padding: 12px;
+    padding: 6px;
     z-index: 999998;
     opacity: 1;
     border-radius: 50%;
