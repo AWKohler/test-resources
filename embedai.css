@@ -1,15 +1,10 @@
 .embedai-logo{
     cursor:pointer;
     position: fixed;
-    /*width: 3rem;*/
-    /*height: 3rem;*/
-    width: 13rem;
-    height: 13rem;
-    /*bottom: 32px;*/
+    width: 5rem;
+    height: 5rem;
     bottom: 44px;
     right: 44px;
-    /*right: 32px;*/
-    /*padding: 4px;*/
     padding: 6px;
     z-index: 999998;
     opacity: 1;
