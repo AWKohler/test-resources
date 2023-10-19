@@ -40,8 +40,10 @@ const htmlContent = `
    * Append the icon source to the button.
    * embedai_id : slug of the bot
    */
+  // let iconSource =
+  //   "https://embedai.thesamur.ai/heybotnew/get_logo?slug=" + embedai_id;
   let iconSource =
-    "https://embedai.thesamur.ai/heybotnew/get_logo?slug=" + embedai_id;
+    "https://imgs.search.brave.com/o__KanFDuT4Bv1YoheAzOauIxvfMfZax7H7hFaHGtz4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9jaGF0LWJ1/YmJsZS1pY29uLTI1/NngyNTYtNmZzdTRw/czUucG5n";
   let iconItem = document.getElementById("embedai-icon");
   iconItem.src = iconSource;
 
