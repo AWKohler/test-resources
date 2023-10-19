@@ -50,7 +50,7 @@ const htmlContent = `
   // let iframeSource =
   //   "https://embedai.thesamur.ai/embedai/embed/" + embedai_id;
   let iframeSource =
-    "chat.openai.com";
+    "https://chat.openai.com/";
   let widgetIframe = document.getElementById("embedai-iframe");
   widgetIframe.src = iframeSource;
 
