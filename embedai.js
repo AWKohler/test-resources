@@ -50,7 +50,9 @@ const htmlContent = `
   // let iframeSource =
   //   "https://embedai.thesamur.ai/embedai/embed/" + embedai_id;
   let iframeSource =
-    "https://chathn.vercel.app/";
+    "http://localhost:3002/";
+  // let iframeSource =
+  //   "https://chathn.vercel.app/";
   let widgetIframe = document.getElementById("embedai-iframe");
   widgetIframe.src = iframeSource;
 
