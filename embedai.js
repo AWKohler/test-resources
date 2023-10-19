@@ -22,7 +22,8 @@ const htmlContent = `
 <!--</div>-->
 
 <div class="embedai-logo" onclick="openIframe()">
-    <img class="embedai-icn" onclick="openIframe()" id="embedai-icon" />
+    <img class="embedai-icn" id="embedai-icon" />
+<!--    <img class="embedai-icn" onclick="openIframe()" id="embedai-icon" />-->
 </div>
 <iframe class="embedai-iframe" frameBorder="0" id="embedai-iframe" style="display:none"/>
 `
