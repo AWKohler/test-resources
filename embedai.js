@@ -1,6 +1,3 @@
-
-// const initial_message = {"initial_message":"hey how are you?"}
-
 if (document.createStyleSheet) {
   document.createStyleSheet("https://test-resources.vercel.app/embedai.css?v=2");
 } else {
@@ -16,29 +13,12 @@ if (document.createStyleSheet) {
 async function init(embedai_id) {
 const htmlContent = `
 <div class="embedai-welcome-message" id="welcome-message"></div>
-<!--<img class="embedai-logo" onclick="openIframe()" id="embedai-icon" />-->
 <div class="embedai-logo" onclick="openIframe()">
     <img class="embedai-icn" id="embedai-icon" />
 </div>
 <iframe class="embedai-iframe" frameBorder="0" id="embedai-iframe" style="display:none"/>
 `
-
 ;
-
-/*
-
-<div class="embedai-welcome-message" id="welcome-message"/>
-
-<!--<div class="embedai-welcome-message" id="welcome-message">-->
-<!--    <div id="welcome-message"></div>-->
-<!--</div>-->
-
-<div class="embedai-logo">
-    <img class="embedai-icn" onclick="openIframe() id="embedai-icon" />
-<!--    <img class="embedai-icn" onclick="openIframe()" id="embedai-icon" />-->
-</div>
-<iframe class="embedai-iframe" frameBorder="0" id="embedai-iframe" style="display:none"/>
- */
 
   const template = document.createElement("div");
   template.innerHTML = htmlContent;
@@ -52,8 +32,6 @@ const htmlContent = `
    */
   // let iframeSource =
   //   "https://embedai.thesamur.ai/embedai/embed/" + embedai_id;
-  // let iframeSource =
-  //   "https://cdn.voiceflow.com/react-chat/db420fbc2cab39ef1fcb0edcf9c9bdaefbfafb94/index.html";
   let iframeSource =
     "http://localhost:3003/chat/92";
   // let iframeSource =
@@ -92,6 +70,9 @@ function openIframe(){
       },100);
       getIframe.style.setProperty('pointer-events','auto')
 
+      // Change the image source to the down arrow when the iframe is open
+      let iconItem = document.getElementById('embedai-icon');
+      iconItem.src = 'https://www.svgrepo.com/show/80156/down-arrow.svg';
   }else{
       getIframe.style.opacity = 0;
       getIframe.style.setProperty('transform','translateX(100px)')
@@ -99,6 +80,10 @@ function openIframe(){
           getIframe.style.display = 'none';
       },100); 
       getIframe.style.setProperty('pointer-events','none')
+
+      // Change the image source back to the original source when the iframe is closed
+      let iconItem = document.getElementById('embedai-icon');
+      iconItem.src = 'https://imgs.search.brave.com/o__KanFDuT4Bv1YoheAzOauIxvfMfZax7H7hFaHGtz4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9jaGF0LWJ1/YmJsZS1pY29uLTI1/NngyNTYtNmZzdTRw/czUucG5n';
   }
 
   const welcomeMessage = document.getElementById("welcome-message");
