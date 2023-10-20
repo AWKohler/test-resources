@@ -50,7 +50,9 @@ const htmlContent = `
   // let iframeSource =
   //   "https://embedai.thesamur.ai/embedai/embed/" + embedai_id;
   let iframeSource =
-    "http://localhost:3003/chat/92";
+    "https://cdn.voiceflow.com/react-chat/db420fbc2cab39ef1fcb0edcf9c9bdaefbfafb94/index.html";
+  // let iframeSource =
+  //   "http://localhost:3003/chat/92";
   // let iframeSource =
   //   "https://chathn.vercel.app/";
   let widgetIframe = document.getElementById("embedai-iframe");
