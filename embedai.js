@@ -46,7 +46,8 @@ const htmlContent = `
   // let iconSource =
   //   "https://embedai.thesamur.ai/heybotnew/get_logo?slug=" + embedai_id;
   let iconSource =
-    "https://imgs.search.brave.com/o__KanFDuT4Bv1YoheAzOauIxvfMfZax7H7hFaHGtz4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9jaGF0LWJ1/YmJsZS1pY29uLTI1/NngyNTYtNmZzdTRw/czUucG5n";
+    // "https://imgs.search.brave.com/o__KanFDuT4Bv1YoheAzOauIxvfMfZax7H7hFaHGtz4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9jaGF0LWJ1/YmJsZS1pY29uLTI1/NngyNTYtNmZzdTRw/czUucG5n";
+    "https://www.svgrepo.com/show/529484/chat-round-unread.svg";
   let iconItem = document.getElementById("embedai-icon");
   iconItem.src = iconSource;
 
@@ -83,7 +84,8 @@ function openIframe(){
 
       // Change the image source back to the original source when the iframe is closed
       let iconItem = document.getElementById('embedai-icon');
-      iconItem.src = 'https://imgs.search.brave.com/o__KanFDuT4Bv1YoheAzOauIxvfMfZax7H7hFaHGtz4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9jaGF0LWJ1/YmJsZS1pY29uLTI1/NngyNTYtNmZzdTRw/czUucG5n';
+      // iconItem.src = 'https://imgs.search.brave.com/o__KanFDuT4Bv1YoheAzOauIxvfMfZax7H7hFaHGtz4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9jaGF0LWJ1/YmJsZS1pY29uLTI1/NngyNTYtNmZzdTRw/czUucG5n';
+      iconItem.src = 'https://www.svgrepo.com/show/529484/chat-round-unread.svg';
   }
 
   const welcomeMessage = document.getElementById("welcome-message");
