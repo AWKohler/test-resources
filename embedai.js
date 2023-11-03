@@ -1,3 +1,6 @@
+
+// have any questions?
+
 if (document.createStyleSheet) {
   document.createStyleSheet("https://test-resources.vercel.app/embedai.css?v=2");
 } else {
@@ -36,7 +39,8 @@ const htmlContent = `
     // "https://celtic-ai-saas.vercel.app/demo";
     // "http://localhost:3003/chat/92";
   // let iframeSource =
-    "https://chathn.vercel.app/";
+  //   "https://chathn.vercel.app/";
+    "https://chat.vercel.ai";
   let widgetIframe = document.getElementById("embedai-iframe");
   widgetIframe.src = iframeSource;
 
