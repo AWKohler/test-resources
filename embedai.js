@@ -36,7 +36,8 @@ const htmlContent = `
   // let iframeSource =
   //   "https://embedai.thesamur.ai/embedai/embed/" + embedai_id;
   let iframeSource =
-    "http://localhost:3001/demo";
+    // "http://localhost:3001/demo";
+    "http://localhost:3000/chat/clqcmst850003umgxmzets2ou";
     // "https://celtic-ai-saas.vercel.app/demo/";
     // "https://celtic-ai-saas.vercel.app/chat/92";
     // "http://localhost:3003/chat/92";
