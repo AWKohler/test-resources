@@ -56,7 +56,7 @@ const htmlContent = `
   //     setWelcomeMessage(data)
   // },3000);
 
-  setWelcomeMessage("Hi there, ask me anything!")
+  setWelcomeMessage2("Hi there, ask me anything!")
 }
 
 function openIframe(){
@@ -93,6 +93,12 @@ function setWelcomeMessage(data){
   
   let welcomeMessageDiv =  document.getElementById("welcome-message");
   welcomeMessageDiv.innerHTML = '<p>'+data.initial_message+'</p>'
+}
+
+function setWelcomeMessage2(data){
+
+  let welcomeMessageDiv =  document.getElementById("welcome-message");
+  welcomeMessageDiv.innerHTML = '<p>'+data+'</p>'
 }
 
 var id = document.getElementById("embedchat").getAttribute("data-id");
