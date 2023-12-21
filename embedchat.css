@@ -1,4 +1,4 @@
-.embedai-logo{
+.embedchat-logo{
     cursor:pointer;
     position: fixed;
     width: 5rem;
@@ -21,15 +21,15 @@
     /*background: white;*/
 }
 
-.embedai-icn{
+.embedchat-icn{
     flex: fit-content;
     padding: 6px;
 }
-.embedai-logo:hover{
+.embedchat-logo:hover{
     scale: 1.1;
     z-index: 999997;
 }
-.embedai-iframe{
+.embedchat-iframe{
     display:none;
     position: fixed;
     width: 396px;
@@ -66,13 +66,13 @@
 
 }
 @media screen and (max-width:1000px){
-    .embedai-logo{
+    .embedchat-logo{
         width: 3rem;
         height: 3rem;
         bottom: 12px;
         right: 12px;
     }
-    .embedai-iframe{
+    .embedchat-iframe{
         width: 90%;
         height: 90%;
         bottom: 50px;
@@ -80,7 +80,7 @@
     }
 }
 
-.embedai-welcome-message {
+.embedchat-welcome-message {
     cursor: pointer;
     position: fixed;
     bottom: 130px;
