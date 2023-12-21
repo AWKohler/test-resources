@@ -109,16 +109,16 @@ function setWelcomeMessage(data){
   welcomeMessageDiv.innerHTML = '<p>'+data.initial_message+'</p>'
 }
 
-// var id = ""
-var getElement = document.querySelector('script[src^="https://test-resources.vercel.app/embedai.js"]')
-// var getElement = document.querySelector('script[src^="https://embedai.thesamur.ai/embedai.js"]')
-// var getElement = document.querySelector('script[src^="http://localhost:5000/embedai.js"]')
-
-if(getElement.src.includes('?shop=')){
-  id=getElement.src.split("=")[1]
-}else{
-  id=getElement.getAttribute("data-id")
-}
+// // var id = ""
+// var getElement = document.querySelector('script[src^="https://test-resources.vercel.app/embedai.js"]')
+// // var getElement = document.querySelector('script[src^="https://embedai.thesamur.ai/embedai.js"]')
+// // var getElement = document.querySelector('script[src^="http://localhost:5000/embedai.js"]')
+//
+// if(getElement.src.includes('?shop=')){
+//   id=getElement.src.split("=")[1]
+// }else{
+//   id=getElement.getAttribute("data-id")
+// }
 
 var id = document.getElementById("embedai").getAttribute("data-id");
 
