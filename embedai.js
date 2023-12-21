@@ -36,9 +36,10 @@ const htmlContent = `
   // let iframeSource =
   //   "https://embedai.thesamur.ai/embedai/embed/" + embedai_id;
   let iframeSource =
+          "https://embedai.thesamur.ai/embedai/embed/" + embedai_id;
     // "http://localhost:3001/demo";
     // "http://localhost:3000/chat/clqcmst850003umgxmzets2ou";
-    "http://localhost:3000/demo/";
+    // "http://localhost:3000/demo/";
     // "https://celtic-ai-saas.vercel.app/demo/";
     // "https://celtic-ai-saas.vercel.app/chat/92";
     // "http://localhost:3003/chat/92";
@@ -107,7 +108,7 @@ function setWelcomeMessage(data){
   welcomeMessageDiv.innerHTML = '<p>'+data.initial_message+'</p>'
 }
 
-var id = ""
+// var id = ""
 var getElement = document.querySelector('script[src^="https://test-resources.vercel.app/embedai.js"]')
 // var getElement = document.querySelector('script[src^="https://embedai.thesamur.ai/embedai.js"]')
 // var getElement = document.querySelector('script[src^="http://localhost:5000/embedai.js"]')
@@ -117,4 +118,7 @@ if(getElement.src.includes('?shop=')){
 }else{
   id=getElement.getAttribute("data-id")
 }
+
+var id = document.getElementById("embedai").getAttribute("data-id");
+
 init(id)
