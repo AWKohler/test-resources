@@ -62,7 +62,8 @@ const htmlContent = `
   let iconItem = document.getElementById("embedai-icon");
   iconItem.src = iconSource;
 
-  let initial_message_url = "https://embedai.thesamur.ai/heybotnew/get_initial_message?slug="+embedai_id;
+  // let initial_message_url = "https://embedai.thesamur.ai/heybotnew/get_initial_message?slug="+embedai_id;
+  let initial_message_url = "Hi there, ask me anything!";
 
 
   const response = await fetch(initial_message_url);
