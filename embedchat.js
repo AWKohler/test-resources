@@ -19,7 +19,7 @@ const htmlContent = `
     <img class="embedchat-icn" id="embedchat-icon" />
 </div>
 
-<div class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none">
+<div>
     <div>
     Header
     </div>
