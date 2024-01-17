@@ -14,20 +14,28 @@ if (document.createStyleSheet) {
 
 async function init(embedchat_id) {
 const htmlContent = `
+
+
+<!--<div class="embedchat-welcome-message" id="welcome-message"></div>-->
+<!--<div class="embedchat-logo" onclick="openIframe()">-->
+<!--    <img class="embedchat-icn" id="embedchat-icon" />-->
+<!--</div>-->
+
+<!--<iframe class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none"/>-->
+
+
+
+<div class="embedchat-header">
+    <span class="embedchat-title">Chat with Us!</span>
+    <button class="embedchat-close-button" onclick="openIframe()">X</button>
+</div>
 <div class="embedchat-welcome-message" id="welcome-message"></div>
 <div class="embedchat-logo" onclick="openIframe()">
     <img class="embedchat-icn" id="embedchat-icon" />
 </div>
 
-<div>
-    <div>
-    Header
-    </div>
-    <iframe class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none"/>
-</div>
+<iframe class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none"></iframe>
 
-<!--<iframe class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none"/>-->
-<!--<iframe class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none"/>-->
 `
 ;
 
@@ -67,34 +75,65 @@ const htmlContent = `
   setWelcomeMessage2("Hi there, ask me anything!")
 }
 
+// function openIframe(){
+//   let getIframe = document.querySelector('.embedchat-iframe')
+//   if(getIframe.style.display=='none'){
+//       getIframe.style.display='block'
+//       window.setTimeout(function(){
+//           getIframe.style.opacity = 1;
+//           getIframe.style.setProperty('transform','translateX(0px)')
+//       },100);
+//       getIframe.style.setProperty('pointer-events','auto')
+//
+//       // Change the image source to the down arrow when the iframe is open
+//       let iconItem = document.getElementById('embedchat-icon');
+//       iconItem.src = 'https://www.svgrepo.com/show/80156/down-arrow.svg';
+//   }else{
+//       getIframe.style.opacity = 0;
+//       getIframe.style.setProperty('transform','translateX(100px)')
+//       window.setTimeout(function(){
+//           getIframe.style.display = 'none';
+//       },100);
+//       getIframe.style.setProperty('pointer-events','none')
+//
+//       // Change the image source back to the original source when the iframe is closed
+//       let iconItem = document.getElementById('embedchat-icon');
+//       iconItem.src = 'https://www.svgrepo.com/show/529484/chat-round-unread.svg';
+//   }
+//
+//   const welcomeMessage = document.getElementById("welcome-message");
+//   welcomeMessage.style.setProperty('display','none')
+// }
+
 function openIframe(){
-  let getIframe = document.querySelector('.embedchat-iframe')
-  if(getIframe.style.display=='none'){
-      getIframe.style.display='block'
-      window.setTimeout(function(){
-          getIframe.style.opacity = 1;
-          getIframe.style.setProperty('transform','translateX(0px)')
-      },100);
-      getIframe.style.setProperty('pointer-events','auto')
+    let getIframe = document.querySelector('.embedchat-iframe');
+    let iconItem = document.getElementById('embedchat-icon');
+    let closeButton = document.querySelector('.embedchat-close-button');
 
-      // Change the image source to the down arrow when the iframe is open
-      let iconItem = document.getElementById('embedchat-icon');
-      iconItem.src = 'https://www.svgrepo.com/show/80156/down-arrow.svg';
-  }else{
-      getIframe.style.opacity = 0;
-      getIframe.style.setProperty('transform','translateX(100px)')
-      window.setTimeout(function(){
-          getIframe.style.display = 'none';
-      },100); 
-      getIframe.style.setProperty('pointer-events','none')
+    if(getIframe.style.display=='none') {
+        // Open the chat window
+        getIframe.style.display='block';
+        closeButton.style.display = 'block';
+        window.setTimeout(function(){
+            getIframe.style.opacity = 1;
+            getIframe.style.setProperty('transform','translateX(0px)');
+        }, 100);
+        getIframe.style.setProperty('pointer-events', 'auto');
+        iconItem.style.display = 'none';
+    } else {
+        // Close the chat window
+        getIframe.style.opacity = 0;
+        getIframe.style.setProperty('transform','translateX(100px)');
+        window.setTimeout(function(){
+            getIframe.style.display = 'none';
+            closeButton.style.display = 'none';
+        }, 600);
+        getIframe.style.setProperty('pointer-events', 'none');
+        iconItem.style.display = 'block';
+    }
 
-      // Change the image source back to the original source when the iframe is closed
-      let iconItem = document.getElementById('embedchat-icon');
-      iconItem.src = 'https://www.svgrepo.com/show/529484/chat-round-unread.svg';
-  }
-
-  const welcomeMessage = document.getElementById("welcome-message");
-  welcomeMessage.style.setProperty('display','none')
+    const welcomeMessage = document.getElementById("welcome-message");
+    welcomeMessage.style.setProperty('display','none');
 }
 
 function setWelcomeMessage(data){

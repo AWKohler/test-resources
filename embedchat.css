@@ -29,7 +29,33 @@
     scale: 1.1;
     z-index: 999997;
 }
+
+.embedchat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: #f4d35e; /* Use the same color as the chat icon */
+    color: black; /* Change this as needed */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.embedchat-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.embedchat-close-button {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 .embedchat-iframe{
+    border-top-left-radius: 0; /* Remove the rounded corners from the top of the iframe */
+    border-top-right-radius: 0; /* Remove the rounded corners from the top of the iframe */
     display:none;
     position: fixed;
     width: 396px;
@@ -44,7 +70,6 @@
     /*border-radius: 22px;*/
     border-radius: 12px;
     box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.1), 0px 10px 100px -20px rgba(50, 50, 93, 0.25), 0px 20px 60px -30px rgba(0, 0, 0, 0.3);
-    /*box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.1), 0px 10px 100px -20px rgba(50, 50, 93, 0.25), 0px 20px 60px -30px rgba(0, 0, 0, 0);*/
     background-color: white;
     /*border: 2px solid #f4d35e;*/
 }
