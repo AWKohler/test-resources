@@ -26,7 +26,7 @@ const htmlContent = `
     <iframe class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none"/>
 </div>
 
-<iframe class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none"/>
+<!--<iframe class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none"/>-->
 <!--<iframe class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none"/>-->
 `
 ;
