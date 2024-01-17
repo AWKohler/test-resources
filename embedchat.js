@@ -18,7 +18,16 @@ const htmlContent = `
 <div class="embedchat-logo" onclick="openIframe()">
     <img class="embedchat-icn" id="embedchat-icon" />
 </div>
+
+<div class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none">
+    <div>
+    Header
+    </div>
+    <iframe class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none"/>
+</div>
+
 <iframe class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none"/>
+<!--<iframe class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none"/>-->
 `
 ;
 
