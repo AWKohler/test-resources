@@ -29,33 +29,7 @@
     scale: 1.1;
     z-index: 999997;
 }
-
-.embedchat-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 16px;
-    background: #f4d35e; /* Use the same color as the chat icon */
-    color: black; /* Change this as needed */
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-.embedchat-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.embedchat-close-button {
-    border: none;
-    background: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
 .embedchat-iframe{
-    border-top-left-radius: 0; /* Remove the rounded corners from the top of the iframe */
-    border-top-right-radius: 0; /* Remove the rounded corners from the top of the iframe */
     display:none;
     position: fixed;
     width: 396px;
