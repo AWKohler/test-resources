@@ -32,7 +32,8 @@ const htmlContent = `
    * embedchat_id : slug of the bot
    */
   let iframeSource =
-    "http://localhost:3000/chat/" + embedchat_id;
+    // "http://localhost:3000/chat/" + embedchat_id;
+    "http://localhost:3000/demo";
 
   let widgetIframe = document.getElementById("embedchat-iframe");
   widgetIframe.src = iframeSource;
