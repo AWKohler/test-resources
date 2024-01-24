@@ -33,7 +33,7 @@ const htmlContent = `
    */
   let iframeSource =
     // "http://localhost:3000/chat/" + embedchat_id;
-    "https://chatflow-ai-saas.vercel.app/demo";
+    "https://botflow.io/demo";
     // "http://localhost:3000/demo";
 
   let widgetIframe = document.getElementById("embedchat-iframe");
