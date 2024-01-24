@@ -37,7 +37,7 @@ const htmlContent = `
     // "https://chatflow-ai-saas.vercel.app";
     // "https://awkohler.dev";
     // "https://botflow.io/demo";
-    "https://embedded.botflow.io/";
+    "https://embedded.botflow.io/id/69";
     // "http://localhost:3000/demo";
 
   let widgetIframe = document.getElementById("embedchat-iframe");
