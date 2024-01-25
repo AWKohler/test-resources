@@ -1,13 +1,13 @@
 //TODO: Get the color from the website
 // have any questions?
 if (document.createStyleSheet) {
-  document.createStyleSheet("https://test-resources.vercel.app/embedchat.css?v=2");
+  document.createStyleSheet("https://test-resources.vercel.app/embeddemochat.css?v=2");
 } else {
   var head = document.getElementsByTagName("head")[0];
   var link = document.createElement("link");
   link.rel = "stylesheet";
   link.type = "text/css";
-  link.href = "https://test-resources.vercel.app/embedchat.css";
+  link.href = "https://test-resources.vercel.app/embeddemochat.css";
   link.media = "all";
   head.appendChild(link);
 }
@@ -109,6 +109,6 @@ function setWelcomeMessage2(data){
   welcomeMessageDiv.innerHTML = '<p>'+data+'</p>'
 }
 
-var id = document.getElementById("embedchat").getAttribute("data-id");
+var id = document.getElementById("embeddemochat").getAttribute("data-id");
 
 init(id)
