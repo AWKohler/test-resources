@@ -27,20 +27,30 @@ const htmlContent = `
   template.innerHTML = htmlContent;
   document.body.appendChild(template);
 
-  /**
-   * Append the source to the Iframe.
-   * embedchat_id : slug of the bot
-   */
-  let iframeSource =
-    // "http://localhost:3000/chat/" + embedchat_id;
-    // "https://chatflow-ai-saas.vercel.app/chat/clrnuu3yo0001l408ppnmat73";
-    // "https://chatflow-ai-saas.vercel.app";
-    // "https://awkohler.dev";
-    // "https://botflow.io/demo";
-    "https://embedded.botflow.io/bot/" + embedchat_id;
-    // "https://embedded.botflow.io/bot/clrnuu3yo0001l408ppnmat73";
-    // "https://embedded.botflow.io/id/69";
-    // "http://localhost:3000/demo";
+    let iframeSource = "";
+
+    if (embedchat_id === "demo") {
+        iframeSource = "https://botflow.io/demo";
+    } else {
+        // Set default values if the embedchat_id is not "demo"
+        // You can modify these default values accordingly
+        iframeSource = "https://embedded.botflow.io/bot/" + embedchat_id;
+    }
+
+  // /**
+  //  * Append the source to the Iframe.
+  //  * embedchat_id : slug of the bot
+  //  */
+  // let iframeSource =
+  //   // "http://localhost:3000/chat/" + embedchat_id;
+  //   // "https://chatflow-ai-saas.vercel.app/chat/clrnuu3yo0001l408ppnmat73";
+  //   // "https://chatflow-ai-saas.vercel.app";
+  //   // "https://awkohler.dev";
+  //   // "https://botflow.io/demo";
+  //   "https://embedded.botflow.io/bot/" + embedchat_id;
+  //   // "https://embedded.botflow.io/bot/clrnuu3yo0001l408ppnmat73";
+  //   // "https://embedded.botflow.io/id/69";
+  //   // "http://localhost:3000/demo";
 
   let widgetIframe = document.getElementById("embedchat-iframe");
   widgetIframe.src = iframeSource;
