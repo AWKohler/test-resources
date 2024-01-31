@@ -84,7 +84,7 @@
 .embedchat-welcome-message {
     cursor: pointer;
     position: fixed;
-    bottom: 130px;
+    bottom: 32px;
     right: 32px;
     /*padding: 4px;*/
     padding: 8px;
