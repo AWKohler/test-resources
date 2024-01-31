@@ -75,7 +75,8 @@ const htmlContent = `
   //     setWelcomeMessage(data)
   // },3000);
 
-  setWelcomeMessage2("Hi there, ask me anything!")
+  // setWelcomeMessage2("Hi there, ask me anything!")
+  setWelcomeMessage2("Need any help?")
 }
 
 function openIframe(){
