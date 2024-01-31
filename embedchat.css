@@ -23,7 +23,7 @@
 
 .embedchat-icn{
     flex: fit-content;
-    padding: 3px;
+    padding: 1px;
 }
 .embedchat-logo:hover{
     scale: 1.1;
