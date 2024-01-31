@@ -32,6 +32,7 @@
 .embedchat-iframe{
     display:none;
     position: fixed;
+    scale: 75%;
     width: 320px;
     height: 75vh;
     bottom: 94px;
