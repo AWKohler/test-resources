@@ -32,8 +32,8 @@
 .embedchat-iframe{
     display:none;
     position: fixed;
-    width: 396px;
-    height: 75vh;
+    width: 310px;
+    height: 65vh;
     bottom: 94px;
     right: 32px;
     pointer-events: none;
