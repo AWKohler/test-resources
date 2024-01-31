@@ -3,8 +3,8 @@
     position: fixed;
     width: 4rem;
     height: 4rem;
-    bottom: 28px;
-    right: 28px;
+    bottom: 25px;
+    right: 25px;
     padding: 18px;
     z-index: 999999;
     opacity: 1;
@@ -35,8 +35,8 @@
     scale: 85%;
     width: 335px;
     height: 80vh;
-    bottom: 58px;
-    right: 25px;
+    bottom: 42px;
+    right: 22px;
     pointer-events: none;
     z-index:9999999;
     opacity: 0;
