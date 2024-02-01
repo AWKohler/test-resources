@@ -37,8 +37,8 @@ const htmlContent = `
         // You can modify these default values accordingly
         // iframeSource = "https://embedded.botflow.io/bot/" + embedchat_id;
 
-        // iframeSource = "http://localhost:3000/liberty/" + embedchat_id;
-        iframeSource = "https://chat.vercel.ai/";
+        iframeSource = "http://localhost:3000/liberty/" + embedchat_id;
+        // iframeSource = "https://chat.vercel.ai/";
     }
 
   // /**
