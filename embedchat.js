@@ -35,9 +35,9 @@ const htmlContent = `
     } else {
         // Set default values if the embedchat_id is not "demo"
         // You can modify these default values accordingly
-        // iframeSource = "https://embedded.botflow.io/bot/" + embedchat_id;
+        iframeSource = "https://embedded.botflow.io/liberty/" + embedchat_id;
 
-        iframeSource = "http://localhost:3000/liberty/" + embedchat_id;
+        // iframeSource = "http://localhost:3000/liberty/" + embedchat_id;
         // iframeSource = "https://chat.vercel.ai/";
     }
 
