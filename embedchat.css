@@ -50,6 +50,7 @@
     /*border: 2px solid #0a1733;*/
     /*border: 2px solid transparent;*/
     outline: 2px transparent;
+    overflow: hidden
 }
 @keyframes pulse-black {
     0% {
