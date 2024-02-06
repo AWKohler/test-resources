@@ -24,6 +24,7 @@
 
 .embedchat-icn{
     flex: fit-content;
+    scale: 50%;
     /*flex-basis: fit-content;*/
     /*padding: 6px;*/
     /*padding: 1px;*/
