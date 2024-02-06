@@ -23,9 +23,10 @@
 }
 
 .embedchat-icn{
-    /*flex: fit-content;*/
-    flex-basis: fit-content;
-    padding: 1px;
+    flex: fit-content;
+    /*flex-basis: fit-content;*/
+    padding: 6px;
+    /*padding: 1px;*/
 }
 .embedchat-logo:hover{
     scale: 1.1;
