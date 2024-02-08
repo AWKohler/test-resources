@@ -138,7 +138,7 @@ async function callApi(chatbotID) {
         // Process your data here
 
         // setWelcomeMessage2(data.welcomeMessage)
-        setWelcomeMessage2(data)
+        setWelcomeMessage2(JSON.stringify(data))
 
     } catch (error) {
         console.error('There has been a problem with your fetch operation:', error);
