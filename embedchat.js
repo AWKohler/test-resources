@@ -137,8 +137,8 @@ async function callApi(chatbotID) {
         console.log(data);
         // Process your data here
 
-        // setWelcomeMessage2(data.welcomeMessage)
-        setWelcomeMessage2(JSON.stringify(data))
+        //@ts-ignore
+        setWelcomeMessage2(data.welcomeMessage)
 
     } catch (error) {
         console.error('There has been a problem with your fetch operation:', error);
