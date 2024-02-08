@@ -137,8 +137,15 @@ async function callApi(chatbotID) {
         console.log(data);
         // Process your data here
 
+        // Resolves error when embedding in typescript based websites
         //@ts-ignore
         setWelcomeMessage2(data.welcomeMessage)
+
+        let iframe = document.getElementById("embedchat-iframe");
+        if(iframe) {
+            iframe.style.display = 'block'; // Assuming you want to show the iframe when modifying it
+            iframe.style.borderRadius = '30px'; // Set your desired border-radius value
+        }
 
     } catch (error) {
         console.error('There has been a problem with your fetch operation:', error);
