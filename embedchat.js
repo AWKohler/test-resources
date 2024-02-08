@@ -145,7 +145,7 @@ async function callApi(chatbotID) {
 
         let iframe = document.getElementById("embedchat-iframe");
         if(iframe) {
-            iframe.style.display = 'block'; // Assuming you want to show the iframe when modifying it
+            // iframe.style.display = 'block'; // Assuming you want to show the iframe when modifying it
             //@ts-ignore
             iframe.style.borderRadius = data.cornerRadius; // Set your desired border-radius value
         }
