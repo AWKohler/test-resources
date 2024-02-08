@@ -144,7 +144,8 @@ async function callApi(chatbotID) {
         let iframe = document.getElementById("embedchat-iframe");
         if(iframe) {
             iframe.style.display = 'block'; // Assuming you want to show the iframe when modifying it
-            iframe.style.borderRadius = '30px'; // Set your desired border-radius value
+            //@ts-ignore
+            iframe.style.borderRadius = data.cornerRadius; // Set your desired border-radius value
         }
 
     } catch (error) {
