@@ -35,7 +35,10 @@ const htmlContent = `
     } else {
         // Set default values if the embedchat_id is not "demo"
         // You can modify these default values accordingly
-        iframeSource = "https://embedded.botflow.io/liberty/" + embedchat_id;
+
+        // iframeSource = "https://embedded.botflow.io/liberty/" + embedchat_id;
+        iframeSource = "http://localhost:3002/liberty/" + embedchat_id;
+
         // iframeSource = "https://embedded.botflow.io/metro/" + embedchat_id;
         // iframeSource = "https://embedded.botflow.io/metro/" + embedchat_id;
         // iframeSource = "http://localhost:3002/metro/" + embedchat_id;
