@@ -126,7 +126,7 @@
     width: 30px;
     height: 30px;
     /*background-color: rgba(0, 0, 0, 0.2);*/
-    background-color: rgba(1, 1, 1, 1.0);
+    background-color: red;
     border: none;
     color: white;
     font-size: 20px;
