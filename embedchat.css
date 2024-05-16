@@ -156,3 +156,28 @@
     color: white;
     z-index: 99999999;
 }
+
+
+.embedchat-logoo{
+    cursor:pointer;
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    bottom: 200px;
+    right: 20px;
+    /*padding: 18px;*/
+    z-index: 999999;
+    opacity: 1;
+    border-radius: 50%;
+    /*border-radius: 30%;*/
+    /*box-shadow: 0 0 8px 2px rgba(22, 58, 71, 0.7);*/
+    box-shadow: 0 0 8px 2px rgba(22, 58, 71, 0.3);
+    transform: scale(1);
+    animation: pulse-black 2.5s infinite;
+    animation-timing-function: ease-in-out;
+    /*background-color: white;*/
+    /*background-color: #f4d35e;*/
+    background-color: #0a1733;
+    /*background-color: blue;*/
+    /*background: white;*/
+}
