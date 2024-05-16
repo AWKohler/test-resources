@@ -37,7 +37,12 @@ const htmlContent = `
         // You can modify these default values accordingly
 
         // iframeSource = "https://embedded.botflow.io/liberty/" + embedchat_id;
-        iframeSource = "https://embedded.botflow.io/bot/" + embedchat_id;
+
+
+        // iframeSource = "https://embedded.botflow.io/bot/" + embedchat_id;
+        iframeSource = "https://localhost:3002/bot/" + embedchat_id;
+
+
         // iframeSource = "http://localhost:3000/bot/" + embedchat_id;
         // iframeSource = "https://embedded.botflow.io/bot/" + embedchat_id;
         // iframeSource = "http://localhost:3002/liberty/" + embedchat_id;
