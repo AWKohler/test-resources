@@ -142,6 +142,11 @@
 .embedchat-close-btn:hover {
     background-color: rgba(0, 0, 0, 0.4);
     transform: scale(1.1);
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
 }
 
 .fat {
