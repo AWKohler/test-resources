@@ -46,7 +46,7 @@
     bottom: 26px;
     right: 10px;
     pointer-events: none;
-    /*z-index:9999999;*/
+    z-index:9999999;
     opacity: 0;
     transform: translateX(100px);
     transition: .6s ease opacity,.6s ease transform;
