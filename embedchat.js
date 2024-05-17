@@ -22,7 +22,9 @@ async function init(embedchat_id) {
 
 <iframe class="embedchat-iframe" frameBorder="0" id="embedchat-iframe" style="display:none"/>
 <!--<button class="embedchat-close-btn" id="embedchat-close-btn">&times;</button>-->
-<div class="fat" id="fat">WHAT DA heck</div>
+
+<!--<div class="fat" id="fat">WHAT DA heck</div>-->
+
 <!--<button class="embedchat-close-btn" id="embedchat-close-btn">hi hey hi hey hi hey hi hey hi hey </button>-->
 `;
 
