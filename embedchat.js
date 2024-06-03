@@ -42,6 +42,7 @@ async function init(embedchat_id) {
     window.addEventListener( "message",
         function (e) {
             if(e.origin !== 'B'){ return; }
+            openIframe()
             alert(e.data);
         },
         false);
