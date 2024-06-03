@@ -39,6 +39,13 @@ async function init(embedchat_id) {
 // `
 // ;
 
+    window.addEventListener( "message",
+        function (e) {
+            if(e.origin !== 'B'){ return; }
+            alert(e.data);
+        },
+        false);
+
   const template = document.createElement("div");
   template.innerHTML = htmlContent;
   document.body.appendChild(template);
