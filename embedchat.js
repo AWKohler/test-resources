@@ -49,7 +49,9 @@ async function init(embedchat_id) {
         iframeSource = "https://botflow.io/demo";
     } else {
 
-        iframeSource = "https://embedded.botflow.io/bot/" + embedchat_id;
+        // iframeSource = "https://embedded.botflow.io/bot/" + embedchat_id;
+        // iframeSource = "https://embedded.botflow.io/bot/" + embedchat_id;
+        iframeSource = "http://localhost:3000/chat/" + embedchat_id;
     }
 
   let widgetIframe = document.getElementById("embedchat-iframe");
