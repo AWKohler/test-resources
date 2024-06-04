@@ -61,6 +61,7 @@ async function init(embedchat_id) {
             console.log("attempting to close")
             // openIframe()
             window.open("https://wordpress.com/plugins/header-footer-code-manager/", "_blank")
+
         }
     });
 
