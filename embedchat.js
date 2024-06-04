@@ -42,13 +42,13 @@ async function init(embedchat_id) {
 
     window.addEventListener('message', function(event) {
 
-        console.log(event.origin)
+        // console.log(event.origin)
 
         // Check the origin of the message to ensure it's from a trusted source
 
-        // if (event.origin !== 'http://localhost:3000/') {
-        //     return; // Ignore messages from untrusted origins
-        // }
+        if (event.origin !== 'http://localhost:3000') {
+            return; // Ignore messages from untrusted origins
+        }
 
         // Handle the 'closeIframe' message
         if (event.data === 'closeIframe') {
