@@ -141,6 +141,8 @@ function setColor(color){
 
     glyphColor = getAccentColor(color);
 
+    console.log(glyphColor)
+
 
     getLogo.style.setProperty('background-color', color)
     getLogo.style.setProperty('visibility', "visible")
