@@ -58,9 +58,10 @@ async function init(embedchat_id) {
             //     iframe.parentNode.removeChild(iframe); // Remove the iframe from the DOM
             // }
 
-            console.log("attempting to close")
-            // openIframe()
-            window.open("https://wordpress.com/plugins/header-footer-code-manager/", "_blank")
+            // console.log("attempting to close")
+            openIframe()
+
+            // window.open("https://wordpress.com/", "_blank")
 
         }
     });
