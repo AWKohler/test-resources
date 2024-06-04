@@ -12,7 +12,8 @@ if (document.createStyleSheet) {
   head.appendChild(link);
 }
 
-let glyphColor = "#ffffff"
+// let glyphColor = `#ffffff`
+let glyphColor = '#ffffff'
 
 async function init(embedchat_id) {
 
