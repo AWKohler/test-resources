@@ -45,9 +45,10 @@ async function init(embedchat_id) {
         console.log("okok")
 
         // Check the origin of the message to ensure it's from a trusted source
-        if (event.origin !== 'http://localhost:3000/') {
-            return; // Ignore messages from untrusted origins
-        }
+
+        // if (event.origin !== 'http://localhost:3000/') {
+        //     return; // Ignore messages from untrusted origins
+        // }
 
         // Handle the 'closeIframe' message
         if (event.data === 'closeIframe') {
