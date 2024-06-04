@@ -12,8 +12,9 @@ if (document.createStyleSheet) {
   head.appendChild(link);
 }
 
+let glyphColor = "#ffffff"
 // let glyphColor = `#ffffff`
-let glyphColor = '#ffffff'
+// let glyphColor = '#ffffff'
 
 async function init(embedchat_id) {
 
@@ -170,7 +171,8 @@ function getAccentColor(color) {
     const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
 
     // Return black or white based on luminance
-    return luminance > 0.5 ? '#000000' : '#ffffff';
+    // return luminance > 0.5 ? '#000000' : '#ffffff';
+    return luminance > 0.5 ? "#000000" : "#ffffff";
 }
 
 
