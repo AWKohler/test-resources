@@ -39,14 +39,35 @@ async function init(embedchat_id) {
 // `
 // ;
 
-    window.addEventListener( "message",
-        function (e) {
+
+    window.addEventListener('message', function(event) {
+        // Check the origin of the message to ensure it's from a trusted source
+        if (event.origin !== 'http://localhost:3000/') {
+            return; // Ignore messages from untrusted origins
+        }
+
+        // Handle the 'closeIframe' message
+        if (event.data === 'closeIframe') {
+            // // Assuming the iframe has an id 'myIframe'
+            // var iframe = document.getElementById('myIframe');
+            // if (iframe) {
+            //     iframe.parentNode.removeChild(iframe); // Remove the iframe from the DOM
+            // }
+
+            console.log("attempting to close")
             openIframe()
-            if(e.origin !== 'B'){ return; }
-            // openIframe()
-            alert(e.data);
-        },
-        false);
+        }
+    });
+
+
+    // window.addEventListener( "message",
+    //     function (e) {
+    //         openIframe()
+    //         if(e.origin !== 'B'){ return; }
+    //         // openIframe()
+    //         alert(e.data);
+    //     },
+    //     false);
 
   const template = document.createElement("div");
   template.innerHTML = htmlContent;
