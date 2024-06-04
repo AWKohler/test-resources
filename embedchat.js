@@ -42,7 +42,7 @@ async function init(embedchat_id) {
 
     window.addEventListener('message', function(event) {
 
-        console.log("okok")
+        console.log(event.origin)
 
         // Check the origin of the message to ensure it's from a trusted source
 
