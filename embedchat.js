@@ -46,7 +46,7 @@ async function init(embedchat_id) {
 
         // Check the origin of the message to ensure it's from a trusted source
 
-        if (event.origin !== 'http://localhost:3000') {
+        if ((event.origin !== 'http://localhost:3000') && event.origin !== 'https://botflow.io') {
             return; // Ignore messages from untrusted origins
         }
 
@@ -59,7 +59,8 @@ async function init(embedchat_id) {
             // }
 
             console.log("attempting to close")
-            openIframe()
+            // openIframe()
+            window.open("https://wordpress.com/plugins/header-footer-code-manager/", "_blank")
         }
     });
 
