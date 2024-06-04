@@ -31,7 +31,8 @@
 
 .embedchat-icn{
     flex: fit-content;
-    scale: 50%;
+    /*scale: 50%;*/
+    scale: 35%;
     /*flex-basis: fit-content;*/
     /*padding: 6px;*/
     /*padding: 1px;*/
