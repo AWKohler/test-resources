@@ -99,6 +99,15 @@ async function init(embedchat_id) {
     // setWelcomeMessage2("Need any help?")
 }
 
+// background-color: #0a1733;
+
+//@ts-ignore
+function setColor(color){
+    let getIframe = document.querySelector('.embedchat-iframe')
+
+    getIframe.style.setProperty('background-color', color)
+}
+
 function openIframe(){
   let getIframe = document.querySelector('.embedchat-iframe')
   if(getIframe.style.display=='none'){
@@ -153,6 +162,7 @@ async function callApi(chatbotID) {
         // Resolves error when embedding in typescript based websites
         //@ts-ignore
         setWelcomeMessage2(data.welcomeMessage)
+        setColor(data.color)
 
         let iframe = document.getElementById("embedchat-iframe");
         if(iframe) {
