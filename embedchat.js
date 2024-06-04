@@ -139,6 +139,7 @@ function setColor(color){
 
 
 
+
     glyphColor = getAccentColor(color);
 
     console.log(glyphColor)
