@@ -30,7 +30,9 @@
 }
 
 .embedchat-icn{
-    flex: fit-content;
+    /*flex: fit-content;*/
+    align-items: center;
+    justify-content: center;
     /*scale: 50%;*/
     /*flex-basis: fit-content;*/
     padding: 6px;
