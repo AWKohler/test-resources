@@ -103,7 +103,7 @@ async function init(embedchat_id) {
 
 //@ts-ignore
 function setColor(color){
-    let getIframe = document.querySelector('.embedchat-iframe')
+    let getIframe = document.querySelector('.embedchat-logo')
 
     getIframe.style.setProperty('background-color', color)
 }
