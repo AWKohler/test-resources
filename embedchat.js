@@ -82,7 +82,8 @@ function openIframe() {
         getIframe.style.display = 'block';
         window.setTimeout(function() {
             getIframe.style.opacity = 1;
-            getIframe.style.setProperty('transform', 'translateX(0px)');
+            // getIframe.style.setProperty('transform', 'translateX(0px)');
+            getIframe.style.setProperty('transform', 'translateY(0px)');
         }, 100);
         getIframe.style.setProperty('pointer-events', 'auto');
 
@@ -90,7 +91,8 @@ function openIframe() {
         iconItem.src = 'https://www.svgrepo.com/show/80156/down-arrow.svg';
     } else {
         getIframe.style.opacity = 0;
-        getIframe.style.setProperty('transform', 'translateX(100px)');
+        // getIframe.style.setProperty('transform', 'translateX(100px)');
+        getIframe.style.setProperty('transform', 'translateY(100px)');
         window.setTimeout(function() {
             getIframe.style.display = 'none';
         }, 100);
