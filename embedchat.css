@@ -30,8 +30,10 @@
     display:none;
     position: fixed;
     scale: 95%;
-    width: 335px;
-    height: 70vh;
+    width: 380px;
+    height: 80vh;
+    /*width: 335px;*/
+    /*height: 70vh;*/
     bottom: 26px;
     right: 10px;
     pointer-events: none;
