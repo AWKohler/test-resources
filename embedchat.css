@@ -31,7 +31,8 @@
     position: fixed;
     scale: 95%;
     width: 370px;
-    height: 75vh;
+    height: 85vh;
+    /*height: 75vh;*/
     /*width: 335px;*/
     /*height: 70vh;*/
     bottom: 26px;
