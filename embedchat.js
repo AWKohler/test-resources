@@ -46,7 +46,8 @@ async function init(embedchat_id) {
         iframeSource = "https://botflow.io/demo";
     } else {
         // iframeSource = "http://localhost:3000/chat/" + embedchat_id;
-        iframeSource = "http://localhost:3000/bot/" + embedchat_id;
+        // iframeSource = "http://localhost:3000/bot/" + embedchat_id;
+        iframeSource = "http://localhost:3000/liberty";
     }
 
     let widgetIframe = document.getElementById("embedchat-iframe");
