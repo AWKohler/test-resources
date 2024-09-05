@@ -49,7 +49,7 @@ async function init(embedchat_id) {
         // iframeSource = "http://localhost:3000/bot/" + embedchat_id;
         // iframeSource = "http://localhost:3000/liberty";
         // iframeSource = "https://embedded.botflow.io/grizzly";
-        iframeSource = "http://localhost:3000/grizzly";
+        iframeSource = "http://localhost:3001/grizzly";
     }
 
     let widgetIframe = document.getElementById("embedchat-iframe");
