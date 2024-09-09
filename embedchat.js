@@ -47,7 +47,7 @@ async function init(embedchat_id) {
 
         iframeSource = "https://botflow.io/demo";
     } else if (embedchat_id === "grizzly") {
-        iframeSource = "https://embedded.botflow.io/grizzly/";
+        iframeSource = "https://embedded.botflow.io/grizzly";
     } else {
         iframeSource = "https://embedded.botflow.io/bot/" + embedchat_id;
     }
