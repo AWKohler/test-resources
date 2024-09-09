@@ -53,13 +53,13 @@ async function init(embedchat_id) {
     // }
 
 
-    if (embedchat_id === "demo") {
-        iframeSource = "https://botflow.io/demo";
+    if (embedchat_id === "grizzly") {
+        iframeSource = "https://embedded.botflow.io/grizzly";
     } else {
         // iframeSource = "http://localhost:3000/chat/" + embedchat_id;
-        // iframeSource = "http://localhost:3000/bot/" + embedchat_id;
+        iframeSource = "https://embedded.botflow.io/bot/" + embedchat_id;
         // iframeSource = "http://localhost:3000/liberty";
-        iframeSource = "https://embedded.botflow.io/grizzly";
+        // iframeSource = "https://embedded.botflow.io/grizzly";
         // iframeSource = "http://localhost:3001/grizzly";
     }
 
