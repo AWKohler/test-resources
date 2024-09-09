@@ -54,7 +54,7 @@ async function init(embedchat_id) {
 
 
     // if (embedchat_id === "grizzly") {
-    if (embedchat_id === "clxkkbgce0001jh0cfm1j5z1o") {
+    if (embedchat_id === "cm0fqod6o0001jv0c6fugtef5") {
         iframeSource = "https://embedded.botflow.io/grizzly";
     } else {
         // iframeSource = "http://localhost:3000/chat/" + embedchat_id;
