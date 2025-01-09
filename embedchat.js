@@ -225,7 +225,7 @@ async function init(embedchat_id) {
     } else {
         // iframeSource = "https://embedded.botflow.io/bot/" + embedchat_id;
         // iframeSource = "http://localhost:3000/bot/" + embedchat_id;
-        iframeSource = "http://localhost:3000/botflow";
+        iframeSource = "http://localhost:3002/botflow";
     }
 
     let widgetIframe = document.getElementById("embedchat-iframe");
